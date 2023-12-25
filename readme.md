@@ -10,4 +10,7 @@ Ini adalah hasil dari project akhir saya untuk sertifikasi Junior Web Developer 
 - Local Storage
 
 ## Instalasi
-Cara instalasi yang cukup mudah. Copy project ini lalu jalankan page/daftar.html di browser.
+1. **Clone Repositori**
+   ```bash
+   git clone https://github.com/lukxnut/Daftar-Beasiswa
+2. **Jalankan page/daftar.html di browser**
