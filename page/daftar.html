@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran Beasiswa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/daftar.css">
+</head>
+
+<body>
+    <main class="container-fluid mb-5">
+        <div class="navigation d-flex mt-3 mb-3">
+            <div class="flex-grow-1">
+                <h5 class="text-center fw-semibold">Pilihan Beasiswa</h5>
+            </div>
+            <div class="flex-grow-1 d-flex navigation-link">
+                <a class="flex-grow-1 daftar-nav active d-flex justify-content-center align-items-center"
+                    href="../page/daftar.html">Daftar</a>
+                <a class="flex-grow-1 d-flex justify-content-center align-items-center"
+                    href="../page/hasil.html">Hasil</a>
+            </div>
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="line text-center">
+            </div>
+
+        </div>
+        <h5 class="text-center fw-bold mb-4 mt-5">DAFTAR BEASISWA</h5>
+        <div class="d-flex justify-content-center">
+            <table class="table table-borderless">
+                <thead class="border-2 border-dark">
+                    <tr>
+                        <th colspan="2" class="p-0 ps-1 fw-semibold">Registrasi Beasiswa</th>
+                    </tr>
+                </thead>
+                <tbody class="border-2 border-dark">
+                    <form action="../php/upload.php" method="post" enctype="multipart/form-data">
+                        <tr>
+                            <th class="ps-5 pt-5 align-middle">
+                                <label class="form-label fw-semibold">Masukan Nama</label>
+                            </th>
+                            <th class="pe-5 pt-5">
+                                <input type="text" class="form-control nama-input input">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="ps-5 align-middle">
+                                <label class="form-label fw-semibold">Masukan Email</label>
+                            </th>
+                            <th class="pe-5">
+                                <input type="email" class="form-control email-input input">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="ps-5 align-middle">
+                                <label class="form-label fw-semibold">nomor HP</label>
+                            </th>
+                            <th class="pe-5">
+                                <input type="number" class="form-control nomor-input input">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="ps-5 align-middle">
+                                <label class="form-label fw-semibold">Semester saat ini</label>
+                            </th>
+                            <th class="pe-5">
+                                <select class="form-select semester-input input" aria-label="Default select example">
+                                    <option selected>Pilih</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="ps-5 align-middle">
+                                <label class="form-label fw-semibold">IPK terakhir</label>
+                            </th>
+                            <th class="pe-5">
+                                <input type="text" class="form-control ipk-input input" readonly>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="ps-5 align-middle">
+                                <label class="form-label fw-semibold">Pilihan Beasiswa</label>
+                            </th>
+                            <th class="pe-5">
+                                <select class="form-select pilihan-input input" aria-label="Default select example"
+                                    disabled>
+                                    <option selected>Pilihan Beasiswa</option>
+                                    <option value="Beasiswa akademik">Beasiswa akademik</option>
+                                    <option value="Beasiswa non akademik">Beasiswa non akademik</option>
+                                </select>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="ps-5 align-middle">
+                                <label class="form-label fw-semibold">Upload Berkas Syarat</label>
+                            </th>
+                            <th class="pe-5">
+                                <input type="file" class="upload-input" disabled name="uploaded_file">
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="ps-5 pb-3">
+                                <button type="submit" class="btn btn-outline-dark form-btn fw-semibold daftar-btn"
+                                    disabled>Daftar</button>
+                            </th>
+                            <th class="text-end pe-5 pb-3">
+                                <button class="btn btn-outline-dark form-btn fw-semibold me-3">Batal</button>
+                            </th>
+                        </tr>
+                    </form>
+                    <tr class="border-2 border-dark">
+                        <th colspan="2" class="p-2"></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer d-flex justify-content-center align-items-center">
+        <p class="mb-0 fw-semibold mt-1 mb-1">Copyright &copy; kampuskuaja.ac.id</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="../script/daftar.js" type="module"></script>
+</body>
+
+</html>
