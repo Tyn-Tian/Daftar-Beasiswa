@@ -13,4 +13,4 @@ Ini adalah hasil dari project akhir saya untuk sertifikasi Junior Web Developer 
 1. **Clone Repositori**
    ```bash
    git clone https://github.com/lukxnut/Daftar-Beasiswa
-2. **Jalankan page/daftar.html di browser**
+2. **Jalankan index.html di browser**
